@@ -12,7 +12,12 @@ class App extends Component {
       .then(res => res.json())
       .then(users => this.setState({users}));
   }
+// test individuallly component did mount and test each individual function within it
+// check that it is being called and that it is setting the state
 
+
+//within render, there is a way of manually feeding in what the render function receives
+// i.e. can feed it a state, then just need to test that it is rendering the html in the correct way
   render() {
     return (
       <div className="App">

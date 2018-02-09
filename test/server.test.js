@@ -14,7 +14,7 @@ describe('server response', function(){
   });
 
 
-  it("should return a staus code of 200", function(done){
+  it("should return a status code of 200", function(done){
     chai.request('http://localhost:4000')
       .get('/users')
       .end(function (err, res) {
