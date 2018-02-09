@@ -31,8 +31,7 @@ describe ('testing App component', () => {
   Promise.resolve(mockResponse(200, null, '[{"name":"Tom"}]')));
 
   beforeEach(() => {
-    wrapper = mount(<App />);
-
+    wrapper = mount(<App  />);
   });
 
   afterEach(() => {
@@ -43,6 +42,7 @@ describe ('testing App component', () => {
   it('App renders as an App', () => {
     expect(wrapper.type()).toEqual(App);
   });
+
   it('Shows the text from the request', () => {
     expect(wrapper.state()).toEqual({ users: [{"name":"Tom"}]});
   });

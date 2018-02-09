@@ -20,8 +20,5 @@
   "devDependencies": {
     "jest-fetch-mock": "^1.4.1"
   }
-<<<<<<< HEAD
-=======
 
->>>>>>> 1f061dc9545f549429adea55814128eebbf2fd99
 }
